@@ -27,7 +27,6 @@ public class App{
     }
     public static void PrintFields(object obj) {
         Console.Write("Fields: ");
-		while(obj != null){
 			Field[] f = obj.getSuperClass().getDeclaredFields();
 			for(int i=0; i<f.length;i++)System.out.println(f[i].getName);
 			
